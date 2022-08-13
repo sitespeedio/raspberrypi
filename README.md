@@ -27,5 +27,5 @@ Login to the device and change the password to your new password using `passwd`.
 
 ```sitespeed.io https://www.sitespeed.io --android```
 
-```sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -c 4g --gnirehtet
+```sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -c 4g --gnirehtet```
 
