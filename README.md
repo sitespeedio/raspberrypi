@@ -22,3 +22,10 @@ Use the user `pi` and password `tearsofaclown` to log into the device using SSH.
 
 ### Changing SSH login password
 Login to the device and change the password to your new password using `passwd`.
+
+### Run tests
+
+```sitespeed.io https://www.sitespeed.io --android```
+
+```sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -c 4g --gnirehtet
+
