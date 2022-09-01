@@ -13,9 +13,9 @@ Use your Raspberry Pi4 to run tests on you Android phones. The images comes with
 2. Burn the image on a SD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 3. Insert the SD card into the Raspberry Pi 4.
 4. Connect your Raspberry Pi with your router through a Ethernet cable and turn on your Raspberry Pi.
-5. Connect your phone to the Raspbeery Pi through USB.
+5. Connect your phone to the Raspbeery Pi through USB and *“Allow USB debugging”* on your phone in the popup.
 
-When you checked that everything works you the SSH password!
+When you checked that everything works you should change the SSH password and update sitespeed.io and NodeJS.
 
 ### Log into the device
 Use the user `pi` and password `tearsofaclown` to log into the device using SSH.
@@ -24,10 +24,33 @@ Use the user `pi` and password `tearsofaclown` to log into the device using SSH.
 Login to the device and change the password to your new password using `passwd`.
 
 ### Run tests
+You can run the test on the phone:
+```
+sitespeed.io https://www.sitespeed.io --android
+```
 
-```sitespeed.io https://www.sitespeed.io --android```
+If you want to use the internet connection of your Rapsberry Pi and throttle it (in this example as a 4g network) you can run like this:
 
-```sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -c 4g --gnirehtet```
+```
+sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -c 4g --gnirehtet
+```
 
 ### Connect using vnc
+
+On your Mac, open “Screen Sharing” and then use *raspberrypi.local* as the hostname and the password *browsertime*. You will then be able to see the Raspberry PI screen on your Mac. 
+
+On you Raspberry Pi you can start *scrcpy* (open a terminal and write  *scrcpy*) and you will see the phone screen on the Raspberry Pi desktop.
+
+### Update your device
+There's probably a newer version of sitespeed.io so install that:
+
+```
+npm install -g sitespeed.io
+```
+
+There's also probably a newer version of NodeJS. Use [latest LTS](https://nodejs.org/en/) and at the moment when I write that it is NodeJS 16.
+```
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs
+```
 
