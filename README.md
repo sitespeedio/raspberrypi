@@ -2,10 +2,11 @@
 
 Use your Raspberry Pi4 to run tests on you Android phones. The images comes with the following pre installed:
 * adb
-* NodeJS, sitespeed.io and dependencies to record a video
+* NodeJS
 * Chromedriver and Geckodriver
 * Gnirenhet so you can reverse the traffic from your phone back to your Raspberry Pi and throttle your connection
 * scrcpy and vnc so you can watch the desktop on you Raspberry Pi from your computer
+* sitespeed.io and dependencies to record a video
 
 
 ## Install using the pre-made image
@@ -39,16 +40,16 @@ sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -
 
 On your Mac, open “Screen Sharing” and then use *raspberrypi.local* as the hostname and the password *browsertime*. You will then be able to see the Raspberry PI screen on your Mac. 
 
-On you Raspberry Pi you can start *scrcpy* (open a terminal and write  *scrcpy*) and you will see the phone screen on the Raspberry Pi desktop.
+On your Raspberry Pi you can start *scrcpy* (open a terminal and write  *scrcpy*) and you will see the phone screen on the Raspberry Pi desktop.
 
 ### Update your device
-There's probably a newer version of sitespeed.io so install that:
+There's probably a newer version of sitespeed.io:
 
 ```
 npm install -g sitespeed.io
 ```
 
-There's also probably a newer version of NodeJS. Use [latest LTS](https://nodejs.org/en/) and at the moment when I write that it is NodeJS 16.
+There's also probably a newer version of NodeJS. Use [latest LTS](https://nodejs.org/en/):
 ```
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install nodejs
