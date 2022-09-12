@@ -1,6 +1,6 @@
 # Raspberry Pi setup for Android phones
 
-Use your Raspberry Pi 4 to run tests on you Android phones. The images comes with the following pre installed:
+Use your Raspberry Pi 4 to run tests on your Android phones. The images comes with the following pre installed:
 * adb
 * NodeJS
 * Chromedriver and Geckodriver
