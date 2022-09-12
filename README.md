@@ -1,6 +1,6 @@
 # Raspberry Pi setup for Android phones
 
-Use your Raspberry Pi4 to run tests on you Android phones. The images comes with the following pre installed:
+Use your Raspberry Pi 4 to run tests on you Android phones. The images comes with the following pre installed:
 * adb
 * NodeJS
 * Chromedriver and Geckodriver
@@ -55,3 +55,5 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install nodejs
 ```
 
+## Install from scratch
+You can [follow the instructions](https://www.sitespeed.io/documentation/sitespeed.io/installation/#raspberry-pi) in the sitespeed.io documentation if you want to install the dependencies yourself.
