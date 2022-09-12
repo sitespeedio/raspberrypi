@@ -16,7 +16,7 @@ Use your Raspberry Pi4 to run tests on you Android phones. The images comes with
 4. Connect your Raspberry Pi with your router through a Ethernet cable and turn on your Raspberry Pi.
 5. Connect your phone to the Raspbeery Pi through USB and *“Allow USB debugging”* on your phone in the popup.
 
-When you checked that everything works you should change the SSH password and update sitespeed.io and NodeJS.
+When you checked that everything works you should [change the SSH password](#change-ssh-login-password) and update sitespeed.io and NodeJS.
 
 ### Log into the device
 Use the user `pi` and password `tearsofaclown` to log into the device using SSH.
