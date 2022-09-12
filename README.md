@@ -21,7 +21,7 @@ When you checked that everything works you should change the SSH password and up
 ### Log into the device
 Use the user `pi` and password `tearsofaclown` to log into the device using SSH.
 
-### Changing SSH login password
+### Change SSH login password
 Login to the device and change the password to your new password using `passwd`.
 
 ### Run tests
