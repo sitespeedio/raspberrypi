@@ -16,7 +16,7 @@ Use your Raspberry Pi4 to run tests on you Android phones. The images comes with
 4. Connect your Raspberry Pi with your router through a Ethernet cable and turn on your Raspberry Pi.
 5. Connect your phone to the Raspbeery Pi through USB and *“Allow USB debugging”* on your phone in the popup.
 
-When you checked that everything works you should [change the SSH password](#change-ssh-login-password) and update sitespeed.io and NodeJS.
+When you checked that everything works you should [change the SSH password](#change-ssh-login-password) and [update sitespeed.io and NodeJS](#update-your-device).
 
 ### Log into the device
 Use the user `pi` and password `tearsofaclown` to log into the device using SSH.
@@ -30,7 +30,7 @@ You can run the test on the phone:
 sitespeed.io https://www.sitespeed.io --android
 ```
 
-If you want to use the internet connection of your Rapsberry Pi and throttle it (in this example as a 4g network) you can run like this:
+If you want to use the internet connection of your Rapsberry Pi and throttle it (in this example as a 4g network) you run your test like this:
 
 ```
 sitespeed.io https://www.sitespeed.io --android --connectivity.engine throttle -c 4g --gnirehtet
