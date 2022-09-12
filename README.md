@@ -14,7 +14,7 @@ Use your Raspberry Pi 4 to run tests on your Android phones. The images comes wi
 2. Burn the image on a SD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 3. Insert the SD card into the Raspberry Pi 4.
 4. Connect your Raspberry Pi with your router through a Ethernet cable and turn on your Raspberry Pi.
-5. Connect your phone to the Raspbeery Pi through USB and *“Allow USB debugging”* on your phone in the popup.
+5. Connect your phone to the Raspberry Pi through USB and *“Allow USB debugging”* on your phone in the popup.
 
 When you checked that everything works you should [change the SSH password](#change-ssh-login-password) and [update sitespeed.io and NodeJS](#update-your-device).
 
